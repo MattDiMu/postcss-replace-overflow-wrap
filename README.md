@@ -36,7 +36,12 @@
 ## Usage
 
 ```js
+/* default usage, with no options (method = replace) */
 postcss([ require('postcss-replace-overflow-wrap') ])
 ```
 
+```js
+/* add word-wrap, but keep overflow-wrap */
+postcss([ require('postcss-replace-overflow-wrap') ])({ method: 'copy' })
+```
 See [PostCSS] docs for examples for your environment.
