@@ -25,3 +25,10 @@ test('add word-wrap right before overflow-wrap due to passed arg', t => {
         '.anotherClass{font-size:1rem;word-wrap:break-word;overflow-wrap:break-word;}'
     , { method: 'copy' });
 });
+
+test('replace overflow-wrap with word-wrap, replace method', t => {
+    return run(t,
+        'main { overflow-wrap: normal; }',
+        'main { word-wrap: normal; }'
+    , { method: 'replace' });
+});
