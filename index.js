@@ -5,12 +5,10 @@ module.exports = postcss.plugin('postcss-replace-overflow-wrap', function (opts)
     var method = opts.method || 'replace';
 
     return function (css, result) { // eslint-disable-line no-unused-vars
-        css.walkDecls(function (decl, i) { // eslint-disable-line no-unused-vars
-            if (decl.prop === 'overflow-wrap') {
-                decl.cloneBefore({ prop: 'word-wrap' });
-                if (method === 'replace') {
-                    decl.remove();
-                }
+        css.walkDecls('overflow-wrap', function (decl, i) { // eslint-disable-line no-unused-vars
+            decl.cloneBefore({ prop: 'word-wrap' });
+            if (method === 'replace') {
+                decl.remove();
             }
         });
     };
