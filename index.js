@@ -1,11 +1,11 @@
-var postcss = require('postcss');
+const postcss = require('postcss');
 
-module.exports = postcss.plugin('postcss-replace-overflow-wrap', function (opts) {
+module.exports = postcss.plugin('postcss-replace-overflow-wrap', (opts) => {
     opts = opts || {};
-    var method = opts.method || 'replace';
+    const method = opts.method || 'replace';
 
-    return function (css, result) { // eslint-disable-line no-unused-vars
-        css.walkDecls('overflow-wrap', function (decl, i) { // eslint-disable-line no-unused-vars
+    return (css) => {
+        css.walkDecls('overflow-wrap', (decl) => {
             decl.cloneBefore({ prop: 'word-wrap' });
             if (method === 'replace') {
                 decl.remove();
