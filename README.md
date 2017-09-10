@@ -1,8 +1,10 @@
-# PostCSS Replace Overflow Wrap [![Build Status][ci-img]][ci]
+# PostCSS Replace Overflow Wrap [![CSS Standard Status][css-img]][css] [![Build Status][ci-img]][ci]
 
 [PostCSS] plugin to replace overflow-wrap with word-wrap. May optionally retain both declarations.
 
 [PostCSS]: https://github.com/postcss/postcss
+[css-img]: https://jonathantneal.github.io/css-db/badge/css-text-overflow-wrap-property.svg
+[css]:     https://jonathantneal.github.io/css-db/#css-text-overflow-wrap-property
 [ci-img]:  https://travis-ci.org/MattDiMu/postcss-replace-overflow-wrap.svg
 [ci]:      https://travis-ci.org/MattDiMu/postcss-replace-overflow-wrap
 
