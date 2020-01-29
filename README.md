@@ -2,6 +2,8 @@
 
 [PostCSS] plugin to replace overflow-wrap with word-wrap. May optionally retain both declarations.
 
+[!['Can I use' table](https://caniuse.bitsofco.de/image/wordwrap.png)](https://caniuse.com/#feat=wordwrap)
+
 [PostCSS]: https://github.com/postcss/postcss
 [css-img]: https://jonathantneal.github.io/css-db/badge/css-text-overflow-wrap-property.svg
 [css]:     https://jonathantneal.github.io/css-db/#css-text-overflow-wrap-property
