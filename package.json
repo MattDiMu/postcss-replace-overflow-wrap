@@ -1,6 +1,6 @@
 {
   "name": "postcss-replace-overflow-wrap",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "PostCSS plugin to replace overflow-wrap with word-wrap or optionally retain both declarations.",
   "keywords": [
     "postcss",
