@@ -34,6 +34,9 @@
 }
 ```
 
+### Installation
+`npm install --save-dev postcss postcss-replace-overflow-wrap`
+
 ## Usage
 
 ```js
